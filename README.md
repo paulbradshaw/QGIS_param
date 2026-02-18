@@ -22,3 +22,4 @@ You can use the following files to practise the processes above, and expand them
 * [defences_classification.csv](https://github.com/paulbradshaw/QGIS_parameterisation/blob/main/optionalfiles/defences_classification.csv) - this contains extra data about the defences that allows you to classify them and therefore use separate symbology in mapping.
 * [QGISlocationsINDICES.csv](optionalfiles/QGISlocationsINDICES.csv) contains the lat/long locations of centre points in each UK local authority
 * [gbcities.csv](optionalfiles/gbcities.csv) contains the lat/long locations of centre points in Great Britain's cities
+* [Historic Flood Map](https://www.data.gov.uk/dataset/76292bec-7d8b-43e8-9c98-02734fd89c81/historic-flood-map1) contains other shape files that you can map - the file `DownloadHistoric_Flood_Map.shp.zip` is what you need to download
