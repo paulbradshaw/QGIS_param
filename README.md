@@ -20,6 +20,7 @@ You will need the following files:
 You can use the following files to practise the processes above, and expand them:
 
 * [defences_classification.csv](https://github.com/paulbradshaw/QGIS_parameterisation/blob/main/optionalfiles/defences_classification.csv) - this contains extra data about the defences that allows you to classify them and therefore use separate symbology in mapping.
+* [qgis_take_pix_twoSize.py](https://github.com/paulbradshaw/QGIS_param/blob/main/optionalfiles/qgis_take_pix_twoSize.py) is a Python script that generates two images for each lat-long, each at a different magnification (useful if some of your areas are large urban sprawls and some are small towns)
 * [QGISlocationsINDICES.csv](optionalfiles/QGISlocationsINDICES.csv) contains the lat/long locations of centre points in each UK local authority. You can also get these from [UK Local Authorities (past and current)](https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/latest)  
 * [gbcities.csv](optionalfiles/gbcities.csv) contains the lat/long locations of centre points in Great Britain's cities
 * [Historic Flood Map](https://www.data.gov.uk/dataset/76292bec-7d8b-43e8-9c98-02734fd89c81/historic-flood-map1) contains other shape files that you can map - the file `DownloadHistoric_Flood_Map.shp.zip` is what you need to download
