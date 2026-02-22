@@ -2,6 +2,8 @@
 
 The following are the prompts and responses [used in ChatGPT](https://chatgpt.com/share/699af284-90d4-8005-80c4-562891ceed40) to develop the code in this repo.
 
+The code pasted below comes from [this thread](https://gis.stackexchange.com/questions/213054/qgis-export-save-as-image-automate-with-python) on the GIS StackOverflow, specifically the code suggested by GeospatialPython.com. 
+
 ## Prompt 1: Add annnotations to tutorial code
 
 > Add annotations to this Python code for QGIS Python console which make it clearer what each line is doing. I want to adapt this code to generate multiple images for a map of the UK by looping through different lat/longs as central points:
