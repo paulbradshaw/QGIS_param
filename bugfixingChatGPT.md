@@ -1,4 +1,4 @@
-# Vibe coding: chat transcript
+# Using ChatGPT to annotate and bug fix template code: chat transcript
 
 The following are the prompts and responses [used in ChatGPT](https://chatgpt.com/share/699af284-90d4-8005-80c4-562891ceed40) to develop the code in this repo.
 
