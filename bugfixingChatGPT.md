@@ -1,6 +1,6 @@
 # Vibe coding: chat transcript
 
-The following are the prompts and responses used in ChatGPT to develop the code in this repo.
+The following are the prompts and responses [used in ChatGPT](https://chatgpt.com/share/699af284-90d4-8005-80c4-562891ceed40) to develop the code in this repo.
 
 ## Prompt 1: Add annnotations to tutorial code
 
