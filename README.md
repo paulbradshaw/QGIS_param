@@ -1,6 +1,20 @@
-# QGIS: Making multiple maps for multiple locations (parameterisation)
+# A map for every reader: how to generate hundreds of images for multiple audiences or partners using QGIS and Python
 
-This repo contains files and tipsheets for *parameterisation* in QGIS: that is, generating multiple maps based on a list of parameters (e.g. a list of lat-long locations)
+The BBC Shared Data Unit wanted to generate a map image for each authority in the UK showing the state of flood defences in that area — so they turned to the mapping tool QGIS’s built-in Python functionality. 
+
+This repo contains files and tipsheets for learning how to generate and export dozens of maps in QGIS centred at different points, and how AI can help speed up the process. 
+
+This process is sometimes called *parameterisation*: generating multiple outputs based on a list of parameters (e.g. a list of lat-long locations)
+
+## Prerequisites and tools
+
+You should have some basic knowledge of QGIS and be comfortable using Python or vibe coding. 
+
+You should have [QGIS](https://qgis.org/download/) and [Python](https://www.askpython.com/python/examples/install-python-with-conda) installed on the computer and a free account with an AI tool such as ChatGPT, Gemini or Claude.
+
+## Objectives
+
+After using this repo you should be able to understand how Python works in QGIS and use AI to help generate, understand and adapt code
 
 ## Files
 
