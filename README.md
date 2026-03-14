@@ -42,3 +42,7 @@ You can use the following files to practise the processes above, and expand them
 * [Flood Map for Planning - Flood Zones](https://www.data.gov.uk/dataset/104434b0-5263-4c90-9b1e-e43b1d57c750/flood-map-for-planning-flood-zones1)
 * [Sensitive Areas - Eutrophic Rivers](https://www.data.gov.uk/dataset/ec3b6c16-3969-474d-a469-6b5f214eddbc/sensitive-areas-eutrophic-rivers) "showing the extent of Urban Wastewater Treatment Directive (91/271/EEC) (UWWTD) sensitive areas (eutrophic)."
 * [Nitrate Vulnerable Zones (NVZ) 2021 Designations](https://www.data.gov.uk/dataset/77ffd32c-13db-4d83-a1f8-044c5397bc34/nitrate-vulnerable-zones-nvz-2021-designations): "areas designated as being at risk from agricultural nitrate pollution."
+
+## Useful links
+
+* BBC Shared Data Unit repo: [Thousands of flood defences below standard as Storm Bram hit](https://github.com/BBC-Data-Unit/flood-defences) - this links to the stories created using the flood defences data, and the wider methodology. The satellite images were not used in the end because we obtained more detailed data that could not be used for mapping for privacy reasons.
