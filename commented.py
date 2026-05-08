@@ -1,4 +1,5 @@
-print("hello script")
+#we print this text at the start and others so we can tell what point the script is at
+print("script is now running")
 
 # Load tools that allow us to control QGIS maps and layouts from this script
 from qgis.PyQt.QtCore import QRectF
@@ -8,27 +9,28 @@ from qgis.core import (
     QgsLayoutExporter, QgsRectangle
 )
 
-# Load some general-purpose tools:
-# - math: for checking whether a number is valid
-# - re: for cleaning up text to make it safe to use in a file name
-# - numpy: for handling numbers that come from a spreadsheet or data table
+# Load some libraries (collections of code for tackling particular problems)
+# math and numpy tackle numerical problems, re (regex) for text, os for file navigation
 import math, re
 import numpy as np
+import os
 print("imported libraries")
 
-# --- optional: load layers (kept commented as per your note) ---
+# --- optional: load layers ---
 # grid_path = "/Users/paul/Documents/wip/QGIS_floodDefences/AIMS_Spatial_Flood_Defences_inc_standardised_attributes.shp/Spatial_Flood_Defences_Including_Standardised_Attributes.shp"
 # vlyr = QgsVectorLayer(grid_path, "grid", "ogr")
 # if vlyr.isValid():
 #     QgsProject.instance().addMapLayer(vlyr)
 
-# Create a folder on your computer to save the exported map images into.
+# Use the os library to create a folder on your computer to save the exported map images into.
 # It will be placed in your Downloads folder, inside a sub-folder called "qgis_images".
 # If the folder already exists, this does nothing — it won't overwrite anything.
-import os
 out_dir = os.path.join(os.path.expanduser("~"), "Downloads", "qgis_images")
 os.makedirs(out_dir, exist_ok=True)
 out_prefix = out_dir + "/"
+
+# Where the exported images will be saved (overrides the folder set up earlier).
+out_prefix = "/Users/paul/Downloads/testqgis/images/"
 
 print("setting CRS")
 # Tell QGIS to use standard latitude/longitude coordinates (WGS 84 — the same system used by GPS).
@@ -38,7 +40,7 @@ print("create simple layout")
 # Get the currently open QGIS project so we can add things to it.
 project = QgsProject.instance()
 
-# Create a new blank print layout (think of this as a blank page you'd use to design a map for printing or export).
+# Create a new blank print layout (which we will fill for printing)
 layout = QgsPrintLayout(project)
 layout.initializeDefaults()  # Set it up with sensible default settings
 layout.setName("centres_layout")  # Give the layout a name
@@ -63,15 +65,11 @@ layout.addLayoutItem(label)
 label.attemptMove(QgsLayoutPoint(20, 5, QgsUnitTypes.LayoutMillimeters))
 
 
-# This is a reusable instruction (a "function") that calculates a rectangular
-# map area centred on a given point.
-# 
-# You provide:
-#   lon, lat      — the centre point (longitude and latitude)
-#   half_w_deg    — how far left and right to show, in degrees
-#   half_h_deg    — how far up and down to show (if not given, same as left/right)
-#
+# def creates a function (a recipe) that we can use later. 
+# This function calculates a rectangular map area centred on a given point. 
+# It needs to be provided with these ingredients: lon, lat (the longitude and latitude of the centre point); half_w_deg (how far left and right to show, in degrees) and half_h_deg (how far up and down to show. If not given, this will be the same as left/right)
 # It returns a rectangle that can be used to set what the map is looking at.
+
 def rect_around(lon, lat, half_w_deg, half_h_deg=None):
     if half_h_deg is None:
         half_h_deg = half_w_deg
@@ -80,8 +78,8 @@ def rect_around(lon, lat, half_w_deg, half_h_deg=None):
 
 
 print("store test latlongs")
-# A list of locations to map. Each entry has a latitude, longitude, and a name.
-# In the real version of this script, this list would be much longer.
+# Create a list of locations to map. Each item has a latitude, longitude, and a name.
+# We start with just two items for testing, but once we get it working, we would expand it to all locations we want to create images for
 listofdicstocsv = [
     {'lat': np.float64(50.844441271809465), 'long': np.float64(-0.2985307978506628), 'officialname': 'Adur District Council'},
     {'lat': np.float64(54.71108952940033),  'long': np.float64(-3.2472347297148736), 'officialname': 'Allerdale Borough Council'}
@@ -98,9 +96,6 @@ half_h = 0.07
 exporter = QgsLayoutExporter(layout)
 settings = QgsLayoutExporter.ImageExportSettings()
 # settings.dpi = 200  # Uncomment this line to increase the image resolution
-
-# Where the exported images will be saved (overrides the folder set up earlier).
-out_prefix = "/Users/paul/Downloads/testqgis/images/"
 
 print("entering loop")
 # Go through each location in the list, one at a time, and export a map image for it.
@@ -125,7 +120,7 @@ for rec in listofdicstocsv:
     # Tell QGIS to redraw the map with the new location and label before we export it.
     map_item.refresh()
 
-    # Turn the location name into something safe to use as a file name:
+    # Use the regex (re) library to turn location name into something safe to use as a file name:
     # replace any special characters or spaces with underscores.
     safe_name = re.sub(r'[^A-Za-z0-9._-]+', '_', officialname).strip('_')
 
