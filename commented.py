@@ -29,8 +29,8 @@ out_dir = os.path.join(os.path.expanduser("~"), "Downloads", "qgis_images")
 os.makedirs(out_dir, exist_ok=True)
 out_prefix = out_dir + "/"
 
-# Where the exported images will be saved (overrides the folder set up earlier).
-out_prefix = "/Users/paul/Downloads/testqgis/images/"
+# To override the folder set up earlier uncomment and adapt the line below
+# out_prefix = "/Users/paul/Downloads/testqgis/images/"
 
 print("setting CRS")
 # Tell QGIS to use standard latitude/longitude coordinates (WGS 84 — the same system used by GPS).
