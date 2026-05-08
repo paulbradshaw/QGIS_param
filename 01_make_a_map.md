@@ -24,6 +24,14 @@ You should now be able to zoom into different areas of the map to see how a part
 
 This is all we need to do for now. But you'll probably want to come back and customise the map further. Here are some ideas.
 
+## Exporting an image
+
+* Click on the *Project* menu and select *Import/Export > Export Map to Image*
+* On the window that appears you can set the scale, resolution, width and height.
+* Click
+
+For more advanced tips on saving images see [this tutorial on using the Layouts tools in QGIS](https://dancoecarto.com/exporting-images-from-qgis)
+
 ## Customising the map
 
 * **Design**: once you've tried out the map you might want to try a different style to more clearly communicate elements of the story visually. The transparency of layers, thickness of lines (or pattern), colour, etc. are all aspects you will want to make changes to see if it improves the effect.
