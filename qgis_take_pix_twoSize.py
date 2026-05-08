@@ -69,12 +69,12 @@ exporter = QgsLayoutExporter(layout)
 settings = QgsLayoutExporter.ImageExportSettings()
 # settings.dpi = 200
 
-# TIP: you can add e.g. [10:20] after listofdicstocsv
-# to only process a slice of the list — useful for testing.
-for rec in listofdicstocsv:
+# NOTE: this only takes the first 3 items from the list 
+# REMOVE [:3] to take all items, or change to another range for more testing
+for rec in listofdicstocsv[:3]:
     lat = float(rec.get('lat', float('nan')))
     lon = float(rec.get('long', float('nan')))
-    officialname = rec.get('officialname', 'unknown'))
+    officialname = rec.get('officialname', 'unknown')
 
     if math.isnan(lat) or math.isnan(lon):
         print(f"skipping '{officialname}': missing lat/long")
