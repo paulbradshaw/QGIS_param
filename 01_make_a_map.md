@@ -8,13 +8,14 @@ We are going to make a basic map that shows flood defences.
 2. Download the following shape files to that folder: go to [AIMS Spatial Flood Defences (inc. standardised attributes)](https://environment.data.gov.uk/dataset/8e5be50f-d465-11e4-ba9a-f0def148f590) and expand the **Spatial information** area. Download the file in that section named `AIMS\_Spatial\_Flood\_Defences\_inc\_standardised\_attributes.shp.zip` - then unzip that file   
 3. Open QGIS and create a new project (***Project \> New***) 
 4. Save it in the same folder (***Project \> Save As...***)
-5. In the *Browser* area in the upper left side of the screen, scroll down to the **XYZ Tiles** section. Double-click on **OpenStreetMap** to add that base layer to your project. This should now appear in your Layers area in the lower left side.
-6. Select ***Layer \> Add Layer \> Add vector layer***.
-7. In the window that appears click on the … next to the **Source** section (where it says *Vector Dataset(s)*) and locate the file that you downloaded called **Spatial\_Flood\_Defences\_Including\_Standardised\_Attributes.shp**. Click **Add**. It should appear in the background behind the window. Click **OK** and then **Close** to return to that.
-8. Zoom in to the area of the map (the UK) where the defences are. You need to now change the colours to make them more visible.
-9. In the Layers window right-click on **OpenStreetMap** and select *Properties*.
-10. Change the opacity of this layer by selecting the **Transparency** option on the left, if it's not already selected (fourth tab) and set it to 50%  
-11. To change the colours of the other layer:
+5. Select ***Layer \> Add Layer \> Add vector layer***.
+6. In the window that appears click on the … next to the **Source** section (where it says *Vector Dataset(s)*) and locate the file that you downloaded called **Spatial\_Flood\_Defences\_Including\_Standardised\_Attributes.shp**. Click **Add**. It should appear in the background behind the window. Click **OK** and then **Close** to return to that.
+7. In the *Browser* area in the upper left side of the screen, scroll down to the **XYZ Tiles** section. Double-click on **OpenStreetMap** to add that base layer to your project. This should now appear in your Layers area in the lower left side.
+8. In the Layers area, click and drag the OpenStreetMap layer so it appears beneath the other layer. 
+9. Zoom in to an area of the map (the UK) where the defences are. You need to now change the colours to make them more visible.
+10. In the Layers window right-click on **OpenStreetMap** and select *Properties*.
+11. Change the opacity of this layer by selecting the **Transparency** option on the left, if it's not already selected (fourth tab) and set it to 50%  
+12. To change the colours of the other layer:
     1. In the Layers window right-click on **Spatial\_Flood\_Defences\_Including\_Standardised\_Attributes** and select *Properties*.   
     2. In the window that appears, select the *Symbology* section.   
     3. Change the opacity to 80% and the width to 0.4mm - or customise other options for how you want the lines to look before applying any colour coding.  
