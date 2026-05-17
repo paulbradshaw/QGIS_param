@@ -34,8 +34,8 @@ out_prefix = out_dir + "/"
 # out_prefix = "/Users/paul/Downloads/testqgis/images/"
 
 print("setting CRS")
-# Tell QGIS to use standard latitude/longitude coordinates (WGS 84 — the same system used by GPS).
-QgsProject.instance().setCrs(QgsCoordinateReferenceSystem("EPSG:4326"))
+# Tell QGIS to use the same CRS as the flood defence data. This ensures map scales are reliable and exports more consistent
+QgsProject.instance().setCrs(QgsCoordinateReferenceSystem("EPSG:27700"))
 
 print("create simple layout")
 # Get the currently open QGIS project so we can add things to it.
