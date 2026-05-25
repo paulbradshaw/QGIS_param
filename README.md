@@ -28,7 +28,7 @@ You will need the following files:
 
 1. [01_make_a_map.md](https://github.com/paulbradshaw/QGIS_parameterisation/blob/main/01_make_a_map.md) describes how to create a basic map in QGIS
 2. [02_layout.md](https://github.com/paulbradshaw/QGIS_param/blob/main/02_layout.md) describes how to create a Layout in QGIS for exporting an image
-3. [03_qgis_python.md]([https://github.com/paulbradshaw/QGIS_parameterisation/blob/main/02_python.md](https://github.com/paulbradshaw/QGIS_param/blob/main/03_qgis_python.md)) describes how to use a Python file to automate map image exports
+3. [03_qgis_python.md](https://github.com/paulbradshaw/QGIS_param/blob/main/03_qgis_python.md) describes how to use a Python file to automate map image exports
 
 ## Optional files
 
