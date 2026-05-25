@@ -32,6 +32,9 @@ print("setting CRS")
 QgsProject.instance().setCrs(QgsCoordinateReferenceSystem("EPSG:27700"))
 
 
+# Get the currently open QGIS project and store in a variable called project
+project = QgsProject.instance()
+
 #Using EPSG:27700 means we need to convert lat/long into British National Grid coordinates
 # first set the source (EPSG:4326) and destination systems (EPSG:27700)
 source_crs = QgsCoordinateReferenceSystem("EPSG:4326")
@@ -45,8 +48,6 @@ transformer = QgsCoordinateTransform(
 
 
 print("create simple layout")
-# Get the currently open QGIS project and store in a variable called project
-project = QgsProject.instance()
 #create a new print layout, in that project, store in a variable called layout
 layout = QgsPrintLayout(project)
 #fill it with default settings
@@ -114,6 +115,7 @@ settings = QgsLayoutExporter.ImageExportSettings()
 
 # SET OUTPUT IMAGE SIZE
 # 1200x795px for web use, matching the A4 layout ratio in the earlier code
+# Note: QSize wasn't imported at the start because the QGIS Python console pre-imports PyQt5 classes automatically.
 settings.imageSize = QSize(1200, 795)
 
 
