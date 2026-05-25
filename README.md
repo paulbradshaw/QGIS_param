@@ -4,7 +4,9 @@ The BBC Shared Data Unit wanted to generate a map image for each authority in th
 
 This repo contains files and tipsheets for learning how to generate and export dozens of maps in QGIS centred at different points, and how AI can help speed up the process. 
 
-This process is sometimes called *parameterisation*: generating multiple outputs based on a list of parameters (e.g. a list of lat-long locations)
+This process is sometimes called *parameterisation*: generating multiple outputs based on a list of parameters (e.g. a list of lat-long locations).
+
+[The slides going through the process are here](https://github.com/paulbradshaw/QGIS_param/blob/main/Dataharvest%20QGIS%20parameterisation.pdf)
 
 ## Prerequisites and tools
 
