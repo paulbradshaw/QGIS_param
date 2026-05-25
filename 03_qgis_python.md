@@ -1,6 +1,6 @@
 # Automating the export of images
 
-Normally to get an image of the map, or part of the map, we would go to **Project > Import/Export > Export Map to Image...** - by default this will export a PNG image of the current view of the map.
+Normally to get an image of the current view of the map we would either go to **Project > Import/Export > Export Map to Image...** or go to **Project > New Print Layout...**. 
 
 But what if you want to do this for lots of different parts of the country?
 
@@ -14,15 +14,17 @@ On that page, click **Raw** to see the [raw file](https://raw.githubusercontent.
 
 Click **File > Save As...** in your browser and save the file in the project folder you've been using for this QGIS project.
 
-Check that folder to make sure it ends in `.py` - if it doesn't, repeat the steps above, making sure you open the *Raw* version of the file, not the HTML preview (which would end in `.html`)
+Check that folder to make sure it ends in `.py` - if it doesn't, repeat the steps above, making sure you open the *Raw* version of the file, not the HTML preview (which would end in `.html`). Alternatively, you can click on the three dots in the upper right corner of the [page](https://github.com/paulbradshaw/QGIS_param/blob/main/qgis_take_pix.py) and select **Download** to download the Python file.
 
 ## Edit the script to point at your folder
 
-The script was written for my laptop, so it points to a folder there. This won't work on your laptop (unless you happen to be called Paul and have the same file structure), so you'll need to change one line of code to point to your own folder.
+The script was written for my laptop, so it points to the Downloads folder, and then creates a sub-folder called "qgis_images". This may not work on your laptop, or you might not want to put it there. In either case, you'll need to uncomment and change one line of code to point to your own folder.
 
 The line in question is this:
 
-`out_prefix = "/Users/paul/Downloads/testqgis/"`
+`# out_prefix = "/Users/paul/Downloads/testqgis/images/"`
+
+Delete the `#` to uncomment that line (change it from a comment to working code). Then change the path in quotation marks to one that works on your machine.
 
 To find out the path to your folder, right click on it and select **Get info** (on a Mac). The window that appears will show you the path under *Where:* 
 
@@ -39,9 +41,9 @@ To find out the path to your folder, right click on it and select **Get info** (
 This is what it does:  
    1. Import QGIS Python libraries  
    2. Store a list of lat-longs
-   3. Choose a map window size
+   3. Choose a map scale
    4. Set a prefix for each image (this is the bit that points to your own folder)
    5. Label each image
    6. Name each image
-   7. Add a placemarker (there are two large code blocks that control this, one inside the loop and one outside)  
+   7. Add a label
 
