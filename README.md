@@ -21,13 +21,14 @@ After using this repo you should be able to understand how Python works in QGIS 
 You will need the following files:
 
 1. A shape file of some sort, to create a map with. The example used is `AIMS_Spatial_Flood_Defences_inc_standardised_attributes.shp.zip` from the Spatial Information section of [AIMS Spatial Flood Defences (inc. standardised attributes)](https://environment.data.gov.uk/dataset/8e5be50f-d465-11e4-ba9a-f0def148f590)
-2. A list of lat-longs for the places you want to generate map images for
-3. A Python file containing the code to automate multiple image exports
+2. A [list of lat-longs](https://github.com/paulbradshaw/QGIS_param/blob/main/optionalfiles/gbcities.csv) for the places you want to generate map images for
+3. A [Python file containing the code to automate multiple image exports](https://github.com/paulbradshaw/QGIS_param/blob/main/qgis_take_pix.py)
 
 ## Walkthrough steps
 
 1. [01_make_a_map.md](https://github.com/paulbradshaw/QGIS_parameterisation/blob/main/01_make_a_map.md) describes how to create a basic map in QGIS
-2. [02_python.md](https://github.com/paulbradshaw/QGIS_parameterisation/blob/main/02_python.md) describes how to use a Python file to automate map image exports
+2. [02_layout.md](https://github.com/paulbradshaw/QGIS_param/blob/main/02_layout.md) describes how to create a Layout in QGIS for exporting an image
+3. [03_qgis_python.md]([https://github.com/paulbradshaw/QGIS_parameterisation/blob/main/02_python.md](https://github.com/paulbradshaw/QGIS_param/blob/main/03_qgis_python.md)) describes how to use a Python file to automate map image exports
 
 ## Optional files
 
@@ -48,4 +49,4 @@ You can use the following files to practise the processes above, and expand them
 * BBC Shared Data Unit repo: [Thousands of flood defences below standard as Storm Bram hit](https://github.com/BBC-Data-Unit/flood-defences) - this links to the stories created using the flood defences data, and the wider methodology. The satellite images were not used in the end because we obtained more detailed data that could not be used for mapping for privacy reasons.
 * In March the FT mapped flood risk areas - their [newsletter explains the methodology](https://ep.ft.com/permalink/emails/eyJlbWFpbCI6ImRmNTAxNzhlMmNlYzVlZjZiZDY2ZmM3Nzg0NGEyMjRkZWNjNjU2ODk0YjhkNTQiLCAidHJhbnNhY3Rpb25JZCI6IjYxZDA0OGU4LWY3ODAtNDhjYy04MjlmLTNiYTEzZDRmMmI4ZSIsICJiYXRjaElkIjoiYTgxMTY2ZTYtNzc3Yy00OWJjLWIwOGQtZjFjNDFmMGE3NGQ1In0=) including the use of AI to assist with coding
 * Tim Green: [Vibe Coding Threatens Journalism: Why Newsrooms Need Governance Now](https://smarterarticles.co.uk/vibe-coding-threatens-journalism-why-newsrooms-need-governance-now) explores some of the ethical and security issues involved in vibe coding
-* Simon Willison: [Not all AI-assisted programming is vibe coding (but vibe coding rocks)](https://simonwillison.net/2025/Mar/19/vibe-coding/) - "I’m concerned that the definition is already escaping its original intent. I’m seeing people apply the term “vibe coding” to all forms of code written with the assistance of AI. I think that both dilutes the term and gives a false impression of what’s possible with responsible AI-assisted programming." 
+* Simon Willison: [Not all AI-assisted programming is vibe coding (but vibe coding rocks)](https://simonwillison.net/2025/Mar/19/vibe-coding/) - "I’m concerned that the definition is already escaping its original intent. I’m seeing people apply the term “vibe coding” to all forms of code written with the assistance of AI. I think that both dilutes the term and gives a false impression of what’s possible with responsible AI-assisted programming." Simon coins the phrase [agentic engineering](https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/) to describe the process of using AI to assist with code.
