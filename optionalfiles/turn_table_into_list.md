@@ -1,15 +1,17 @@
-# Turning a table into a list in Excel
+# Turning a spreadsheet table into a Python list
+
+## The spreadsheet method
 
 This can be done with an AI tool (see below), but a more environmentally-friendly way to do this, while also building spreadsheet skills, is as follows:
 
-1. [Download the CSV of cities](https://github.com/paulbradshaw/QGIS_param/blob/main/optionalfiles/gbcities.csv) and open in Excel
+1. [Download the CSV of cities](https://github.com/paulbradshaw/QGIS_param/blob/main/optionalfiles/gbcities.csv) and open in Excel or Google Sheets
 2. Type this formula in cell J2. It will take the lat, long and name from three cells and insert them into a Python dict: `="{'lat': "&B2&", 'long': "&C2&", 'officialname': '"&A2&"'}"`
 3. Copy the formula down for each row. You now have a column of dicts.
 4. Type this formula to join the results using the [TEXTJOIN function](https://support.microsoft.com/en-us/office/textjoin-function-357b449a-ec91-49d0-80c3-0e8fc845691c), with a comma between each dict (the TRUE means ignore blank cells): `=TEXTJOIN(", ",TRUE,J:J)`
 5. You now have the contents of a list - you just need to add a square bracket on either side to indicate the beginning and end of the list*. 
 6. In your code, type an opening and closing square bracket, and then paste the list of dicts between them. 
 
-## The AI option
+## The AI method
 
 First, create a CSV which contains only the information you need in your Python list (the city name, latitude and longitude).
 
