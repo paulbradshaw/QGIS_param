@@ -29,7 +29,8 @@ You will need the following files:
 1. [01_make_a_map.md](https://github.com/paulbradshaw/QGIS_parameterisation/blob/main/01_make_a_map.md) describes how to create a basic map in QGIS
 2. [02_layout.md](https://github.com/paulbradshaw/QGIS_param/blob/main/02_layout.md) describes how to create a Layout in QGIS for exporting an image
 3. [03_qgis_python.md](https://github.com/paulbradshaw/QGIS_param/blob/main/03_qgis_python.md) describes how to use a Python file to automate map image exports
-4. [04_AI_prompt.md](https://github.com/paulbradshaw/QGIS_param/blob/main/04_AI_prompt.md) provides a template prompt for using AI to 'vibe code' while addressing the risks of deskilling
+4. [Turning a table into a list in Excel](https://github.com/paulbradshaw/QGIS_param/blob/main/optionalfiles/turn_table_into_list.md) describes how to generate a Python list of lat-longs and city names if you don't already have one. You could also use AI to do this.
+5. [04_AI_prompt.md](https://github.com/paulbradshaw/QGIS_param/blob/main/04_AI_prompt.md) provides a template prompt for using AI to 'vibe code' while addressing the risks of deskilling
 
 ## Optional files
 
