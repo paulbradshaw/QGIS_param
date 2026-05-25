@@ -29,8 +29,7 @@ This is all we need to do for now. But you'll probably want to come back and cus
 ## The simple way to export an image (this is different to the Layout that we will automate)
 
 * Click on the *Project* menu and select *Import/Export > Export Map to Image*
-* On the window that appears you can set the scale, resolution, width and height.
-* Click
+* On the window that appears you can set the scale, resolution, width and height, and then save.
 
 For more advanced tips on saving images see [this tutorial on using the Layouts tools in QGIS](https://dancoecarto.com/exporting-images-from-qgis)
 
