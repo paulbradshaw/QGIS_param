@@ -34,6 +34,8 @@ You will need the following files:
 4. [Turning a table into a list in Excel](https://github.com/paulbradshaw/QGIS_param/blob/main/optionalfiles/turn_table_into_list.md) describes how to generate a Python list of lat-longs and city names if you don't already have one. You could also use AI to do this.
 5. [04_AI_prompt.md](https://github.com/paulbradshaw/QGIS_param/blob/main/04_AI_prompt.md) provides a template prompt for using AI to 'vibe code' while addressing the risks of deskilling
 
+Kuang Keng's [workshop on making a map publication-ready](https://github.com/kuangkeng/dataharvest2026-qgis-mapmaking) has some additional tips on customising your map further.
+
 ## Optional files
 
 You can use the following files to practise the processes above, and expand them:
