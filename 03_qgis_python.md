@@ -37,11 +37,12 @@ To find out the path to your folder, right click on it and select **Get info** (
 ## What the code does
 
 This is what it does:  
-   1. Import QGIS Python libraries  
-   2. Store a list of lat-longs
-   3. Choose a map scale
-   4. Set a prefix for each image (this is the bit that points to your own folder)
-   5. Label each image
-   6. Name each image
-   7. Add a label
+
+1. Specifies a folder to store all the images
+2. Stores a list of lat-longs
+3. Creates a transformer to convert those to the projection used by your shape files (the coordinate reference system, or CRS)
+4. Sets a map size and scale
+5. Loops through each location in the list, zooms to that scale, and adds a label with the location and scale
+6. Sets a filename that includes the name of the location
+7. Exports an image with that name (for each location in the list)
 
