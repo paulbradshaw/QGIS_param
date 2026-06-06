@@ -1,8 +1,14 @@
 # Turning a spreadsheet table into a Python list
 
+## The online tool method
+
+There are plenty of online tools which will convert a CSV file into a list of dictionaries (typically exported as a JSON file). The website [CSV2JSON](https://csvjson.com/csv2json) is especially useful for our purposes because it provides the list of dictionaries as text which can be copied directly, rather than having to download it as a file. 
+
+These tools tend to appear and disappear, so if that link is no longer working, search for 'CSV to JSON converter' and find a tool that works for you. 
+
 ## The spreadsheet method
 
-This can be done with an AI tool (see below), but a more environmentally-friendly way to do this, while also building spreadsheet skills, is as follows:
+A more environmentally-friendly way than using AI to convert a table to a list of dictionaries (see below), while also building spreadsheet skills, is as follows:
 
 1. [Download the CSV of cities](https://github.com/paulbradshaw/QGIS_param/blob/main/optionalfiles/gbcities.csv) and open in Excel or Google Sheets
 2. Type this formula in cell J2. It will take the lat, long and name from three cells and insert them into a Python dict: `="{'lat': "&B2&", 'long': "&C2&", 'officialname': '"&A2&"'}"`
