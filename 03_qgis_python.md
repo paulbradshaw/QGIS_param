@@ -10,9 +10,7 @@ This is a job for code.
 
 I've written a Python script that will generate multiple images from our map. It is called `qgis_take_pix.py` and is [located here](https://github.com/paulbradshaw/QGIS_param/blob/main/qgis_take_pix.py). 
 
-On that page, click **Raw** to see the [raw file](https://raw.githubusercontent.com/paulbradshaw/QGIS_param/refs/heads/main/qgis_take_pix.py).
-
-Click **File > Save As...** in your browser and save the file in the project folder you've been using for this QGIS project.
+To download it, click the three dots in the upper right corner and select **Download**, or click **Raw** to see the [raw file](https://raw.githubusercontent.com/paulbradshaw/QGIS_param/refs/heads/main/qgis_take_pix.py) and click **File > Save As...** in your browser. Save the file in the project folder you've been using for this QGIS project.
 
 Check that folder to make sure it ends in `.py` - if it doesn't, repeat the steps above, making sure you open the *Raw* version of the file, not the HTML preview (which would end in `.html`). Alternatively, you can click on the three dots in the upper right corner of the [page](https://github.com/paulbradshaw/QGIS_param/blob/main/qgis_take_pix.py) and select **Download** to download the Python file.
 
