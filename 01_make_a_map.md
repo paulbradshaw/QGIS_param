@@ -26,12 +26,19 @@ You should now be able to zoom into different areas of the map to see how a part
 
 This is all we need to do for now. But you'll probably want to come back and customise the map further. Here are some ideas.
 
-## The simple way to export an image (this is different to the Layout that we will automate)
+## The simple way to export an image - and the Layout that we will automate
+
+A simple way to export an image is as follows:
 
 * Click on the *Project* menu and select *Import/Export > Export Map to Image*
 * On the window that appears you can set the scale, resolution, width and height, and then save.
 
+But a better way is to use the **Layout** tool. 
+
+* [Follow the instructions here to create your layout](https://github.com/paulbradshaw/QGIS_param/blob/main/02_layout.md)
+
 For more advanced tips on saving images see [this tutorial on using the Layouts tools in QGIS](https://dancoecarto.com/exporting-images-from-qgis)
+
 
 ## Customising the map
 
